@@ -1,0 +1,46 @@
+[
+  {
+    "id": 0,
+    "is_active": "active",
+    "image": "sadhguru",
+    "author": "Sadhguru",
+    "reference": {
+      "type":"youtube",
+      "text": "In Conversation with the Mystic",
+      "link": "https://youtu.be/MwgkvBZXum0?t=3728"
+    },
+    "text": "Look at life just as life, not as how it is useful. Life need not to be useful, it is a phenomena beyond our use, a phenomena to be experienced."
+  },
+  {
+    "id": 1,
+    "image": "sadhguru",
+    "author": "Sadhguru",
+    "reference": {
+      "type":"twitter",
+      "text":"@minimo_io",
+      "link": "https://twitter.com/minimo_io/status/1177434451367694336"
+      },
+    "text": "Intelligence it is a sharp knife. Sometimes we do not know how to hold it and we cut ourselves [...] Essentially human suffering is that."
+  },
+  {
+    "id": 3,
+    "image": "bert-hellinger",
+    "author": "Bert Hellinger",
+    "reference": "",
+    "text": "Eso de amar y no esperar nada a cambio es bonito en los cuentos de hadas. En la vida real un amor maduro exige un delicado equilibrio entre dar y recibir, porque todo aquello que no es mutuo, resulta ser tóxico."
+  },
+  {
+    "id": 4,
+    "image": "sadhguru",
+    "author": "Sadhguru",
+    "reference": "",
+    "text": "Technology will bring confort and convenience, will not bring wellbeing. It is time to focus on that."
+  },
+  {
+    "id": 5,
+    "image": "carl-sagan",
+    "author": "Carl Sagan",
+    "reference": "",
+    "text": "It is far better to grasp the universe as it really is than to persist in delusion, however satisfying and reassuring."
+  }
+]

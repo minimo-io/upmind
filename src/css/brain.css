@@ -1,0 +1,237 @@
+@charset "UTF-8";
+@import 'https://use.fontawesome.com/releases/v5.7.0/css/all.css';
+@import 'https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap';
+
+::selection {
+    background: rgba(255, 255, 0, .5)
+}
+:root {
+  --brain-color: rgb(255,69,0);
+  /* --brain-color: blue; */
+}
+/* bootstrap redefinitions */
+
+.text-danger{ color: var(--brain-color) !important;}
+.btn{ transition: all 0.5s ease !important; }
+.btn-danger{ background-color: var(--brain-color); }
+/* end bootstrap redefinitions */
+
+/* alt template redefinitions */
+.overlay-white::after{
+  background: linear-gradient(to bottom left, transparent 20%, rgba(248, 249, 250, 0.2) 100%);
+}
+.overlay-white:hover::after{
+    background: linear-gradient(to bottom left, transparent 20%, rgba(248, 249, 250, 1) 100%);
+    opacity: .5;
+}
+/* end alt template redefinitiokns */
+
+.colorbase{
+  color:var(--brain-color);
+}
+.brain-bar{
+  position:fixed;
+  width:10px;
+  height:100vh;
+  top:0;
+  left:0;
+  background-color:var(--brain-color);
+  transition: background-color 0.5s ease;
+  z-index:102;
+  opacity:.5;
+}
+.app-margin{ margin:25px 3%; }
+.bg_yellow{ background: rgba(255,255,0,.4); }
+/* .navbar{
+  line-height: 1;
+  border-top: 1px solid #e5e5e5;
+} */
+.logo {
+  font-size: 1.70rem;
+  font-family: Nunito, "Space Mono";
+  color: #000;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+  letter-spacing: normal;
+  cursor: pointer;
+}
+.carousel-quotes{
+  position: relative;
+  /* height:100%; */
+
+}
+.carousel-control-next, .carousel-control-prev{ width:12%; }
+.carousel-control-next-icon, .carousel-control-prev-icon{ width:12px; height:12px; opacity:.3; }
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-inner{
+  width:auto;
+
+  /* background: rgb(255,255,255);
+  background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 35%, rgba(238,238,238,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 35%, rgba(238,238,238,1) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 35%, rgba(238,238,238,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#eeeeee",GradientType=1); */
+
+  padding-top:2rem;
+  padding-bottom:3%;
+  border-radius:15px;
+  /* border-top: 1px solid  rgba(255, 0, 0, .1);
+  border-bottom: 1px solid  rgba(255, 0, 0, .1);
+  border: 1px solid  rgba(255, 0, 0, .1); */
+}
+.carousel-item{
+  /* transition: none; */
+  /* transition: transform 2s ease, opacity .5s ease-out */
+
+}
+
+.brain-toolbox{
+  /* position:absolute; */
+  display:block;
+  top:0;
+  right:5%;
+  font-size:1.5rem;
+}
+.overlay-quotes{
+  top: -10px;
+  z-index:1;
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 120%;
+  height: 120%;
+}
+
+/* BLockquotes =====================================  */
+blockquote.brain-quote {
+  width:100%;
+  font-size: 1.55556em;
+  border: 0;
+  margin: 0;
+  /* padding:20%; */
+  /* padding:10%; */
+  padding:15%;
+  padding-top:3%;
+  padding-bottom:0;
+  position:relative;
+}
+blockquote.brain-quote{ font-size: 1.1rem !important; }
+blockquote.brain-quote p,
+blockquote.brain-quote cite {
+    font-family: Nunito, sans-serif;
+
+    line-height: 1.65;
+    padding: 0
+}
+blockquote.brain-quote .btn-group button{ opacity:.4; box-shadow: none;}
+blockquote.brain-quote .btn-group button:hover{ opacity:1; }
+blockquote.brain-quote cite { color: #7b868c; }
+blockquote.brain-quote footer, blockquote.brain-quote .quote-btns{ z-index:2; }
+blockquote.brain-quote footer img { width:3rem; filter: grayscale(100%); }
+blockquote.brain-quote footer span:first-of-type {  }
+blockquote.brain-quote footer a { color:#000; }
+blockquote.brain-quote .quote-btns{ text-align:center; width:inherit; text-align:center; margin:0 auto; }
+.quote-btns button{ background-color:var(--brain-color); font-size:.7rem; box-shadow: none !important;}
+blockquote.brain-quote p:first-of-type::first-letter {
+    float: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin-left: inherit;
+    margin-bottom: inherit;
+    padding: inherit;
+    position: relative;
+    background-color: inherit;
+    color: inherit;
+    padding: inherit;
+    margin-right: inherit;
+    margin-top: inherit;
+    font-family: inherit
+}
+
+/* blockquote.brain-quote cite::before {
+    content: '~'
+} */
+
+blockquote.brain-quote::before {
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin-bottom: .5em;
+    background-image: url(../imgs/alt-quote.png);
+    background-size: cover;
+    content: '';
+    opacity:.3;
+    position: relative;
+    left:-18px;
+}
+
+@media(max-width:640px) {
+    blockquote.brain-quote::before {
+        width: 70px;
+        height: 50px
+    }
+    blockquote.brain-quote p,
+    blockquote.brain-quote cite {
+        font-size: .9em
+    }
+}
+
+
+@media(max-width:340px) {
+    blockquote.brain-quote::before {
+        width: 50px;
+        height: 40px
+    }
+    blockquote.brain-quote p,
+    blockquote.brain-quote cite {
+        font-size: .8em
+    }
+
+}
+/* End BLockquotes =================================  */
+
+/* media queries compatible with bootstrap breakpoints */
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+  .brain-logo{ font-size:1.25rem; }
+  .navbar-toggler{ font-size:0.5rem; padding:.3rem .50rem; }
+  .navbar-nav .nav-link{ font-size:.8rem; }
+  blockquote.brain-quote::before {
+      width: 54px;
+      height: 39px
+  }
+  blockquote.brain-quote p,
+  blockquote.brain-quote cite {
+      font-size: .7em
+  }
+  blockquote.brain-quote footer{ font-size:1.1rem; }
+  blockquote.brain-quote footer img { width:2rem; }
+
+}
+.alt-header{
+  font-family: "Nunito", Courier, monospace;
+  text-transform: none;
+  font-size:.5rem;
+}
+.alt-header__right{
+  font-family: "Space Mono", Courier, monospace;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  z-index:101;
+}
+.alt-header__newsletter a, .alt-header__search a, .alt-header__left a, .social-icons a, .menu-nav a{
+  font-size:1rem;
+}
